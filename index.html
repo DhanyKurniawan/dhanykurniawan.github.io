@@ -11,6 +11,9 @@
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
 
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- My CSS -->
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -60,15 +63,19 @@
 
     <!-- About -->
     <section id="about">
-      <div class="container">
+      <div class="container" data-aos="fade-down" data-aos-duration="1000">
         <div class="row text-center mb-3">
           <div class="col">
             <h2>About Me</h2>
           </div>
         </div>
         <div class="row justify-content-center fs-5 text-center">
-          <div class="col-md-4 mb-3">Fresh graduates bidang ilmu komputer lulusan Teknik Informatika. Memiliki pengalaman dalam membangun website sederhana dalam rangka untuk kepentingan pendidikan.</div>
-          <div class="col-md-4 mb-3">Siap memberikan kontribusi positif pada kantor atau perusahaan tempat bekerja. Menjunjung tinggi nilai-nilai kejujuran, tanggungjawab, dan profesionalisme.</div>
+          <div class="col-md-4 mb-3" data-aos="fade-right" data-aos-duration="1000">
+            <p>Fresh graduates bidang ilmu komputer lulusan Teknik Informatika. Memiliki pengalaman dalam membangun website sederhana dalam rangka untuk kepentingan pendidikan.</p>
+          </div>
+          <div class="col-md-4 mb-3" data-aos="fade-left" data-aos-duration="1000">
+            <p>Siap memberikan kontribusi positif pada kantor atau perusahaan tempat bekerja. Menjunjung tinggi nilai-nilai kejujuran, tanggungjawab, dan profesionalisme.</p>
+          </div>
         </div>
       </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -85,12 +92,12 @@
     <section id="projects">
       <div class="container">
         <div class="row text-center mb-3">
-          <div class="col">
+          <div class="col" data-aos="fade-down" data-aos-duration="1000">
             <h2>My Projects</h2>
           </div>
         </div>
         <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3" data-aos="flip-left" data-aos-duration="500">
             <div class="card">
               <img src="img/projects/1.jpg" class="card-img-top" alt="Project 1" />
               <div class="card-body">
@@ -98,7 +105,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3" data-aos="flip-left" data-aos-duration="500" data-aos-delay="100">
             <div class="card">
               <img src="img/projects/2.jpg" class="card-img-top" alt="Project 2" />
               <div class="card-body">
@@ -106,7 +113,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3" data-aos="flip-left" data-aos-duration="500" data-aos-delay="200">
             <div class="card">
               <img src="img/projects/3.jpg" class="card-img-top" alt="Project 3" />
               <div class="card-body">
@@ -114,7 +121,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3" data-aos="flip-left" data-aos-duration="500" data-aos-delay="300">
             <div class="card">
               <img src="img/projects/4.jpg" class="card-img-top" alt="Project 4" />
               <div class="card-body">
@@ -122,7 +129,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-3">
+          <div class="col-md-4 mb-3" data-aos="flip-left" data-aos-duration="500" data-aos-delay="400">
             <div class="card">
               <img src="img/projects/5.jpg" class="card-img-top" alt="Project 5" />
               <div class="card-body">
@@ -197,6 +204,13 @@
     <!-- Akhir Footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
 
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbzibuKmBktf4yjh-W2z8vxIsnUEIhN7s0_LmqckVRw2dnRrMyevgXYLEeBsfHYYFvxk/exec";
